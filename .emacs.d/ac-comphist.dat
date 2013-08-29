@@ -1,0 +1,170 @@
+((("mouse-sel-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("setq" .
+   [1 0 0 0])
+  ("track-mouse" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("scroll-up" .
+   [1 0 0 0 0 0 0 0 0])
+  ("scroll-down" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("interactive" .
+   [1 0 0 0 0 0 0 0 0 0 1])
+  ("lambda" .
+   [2 0 0 0 0 0])
+  ("xterm-mouse-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse" .
+   [1 0 0 0 0])
+  ("window-system" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("unless" .
+   [1 0 0 0 0 0])
+  ("$ps_obj" .
+   [2 0 0 0 0 0 0])
+  ("array" .
+   [2 0 0 0 0])
+  ("$cols" .
+   [3 0 0 0 0])
+  ("$row" .
+   [2 0 0 0])
+  ("as" .
+   [1 0])
+  ("foreach" .
+   [1 0 0 0 0 0 0])
+  ("$file_contents" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("explode" .
+   [2 0 0 0 0 0 0])
+  ("$rows" .
+   [2 0 0 0 0])
+  ("ABSPATH" .
+   [1 0 0 0 0 0 0])
+  ("file_get_contents" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("site_code" .
+   [2 0 0 0 0 0 0 0 0])
+  ("empty" .
+   [1 0 0 0 0])
+  ("setup_sitecode_arr" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("public" .
+   [1 0 0 0 0 0])
+  ("$this" .
+   [3 0 0 0 0])
+  ("alias" .
+   [1 0 0 0 0])
+  ("indent-for-tab-command" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("indent" .
+   [1 0 0 0 0 0])
+  ("afterMatchedRoute" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("i" .
+   [1])
+  ("else" .
+   [1 0 0 0])
+  ("return" .
+   [1 0 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("show" .
+   [1 0 0 0])
+  ("el" .
+   [1 0])
+  ("find" .
+   [1 0 0 0])
+  ("$el" .
+   [2 0 0])
+  ("risksShow" .
+   [1 0 0 0 0 0 0 0 0])
+  ("apply" .
+   [1 0 0 0 0])
+  ("prototype" .
+   [1 0 0 0 0 0 0 0 0])
+  ("Module" .
+   [1 0 0 0 0 0])
+  ("Puppeteer" .
+   [1 0 0 0 0 0 0 0 0])
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("scroll-preserve-screen-position" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("set-default" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("comment-or-uncomment-region" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("uncomment-region" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("print" .
+   [1 0 0 0 0])
+  ("debugger" .
+   [3 0 0 0 0 0 0 0])
+  ("this" .
+   [6 0 0 0])
+  ("testFunc" .
+   [0 0 0 0 1 0 0 0])
+  ("Meteor" .
+   [2 0 0 0 0 0])
+  ("render" .
+   [4 0 0 0 0 0])
+  ("Template" .
+   [4 0 0 0 0 0 0 0])
+  ("home" .
+   [1 0 0 0])
+  ("console" .
+   [2 0 0 0 0 0 0])
+  ("log" .
+   [2 0 0])
+  ("about" .
+   [4 0 0 0 0])
+  ("greeting" .
+   [2 0 0 0 0 0 0 0])
+  ("function" .
+   [6 0 0 0 0 0 0 0])
+  ("global-set-key" .
+   [2 0 0 0 0 0 0 0 0 0 3 0 0 1])
+  ("kbd" .
+   [5 0 0])
+  ("comment-region" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("grunt" .
+   [1 0 0 0 0])
+  ("loadNpmTasks" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("load-theme" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("deeper-blue" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("require" .
+   [2 0 0 0 0 0 0])
+  ("smooth-scroll" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("auto" .
+   [2 0 0 0])
+  ("0" .
+   [1])
+  ("print_r" .
+   [2 0 0 0 0 0 0])
+  ("$new_file_contents" .
+   [0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("die" .
+   [1 0 0])
+  ("defalias" .
+   [2 0 0 0 0 0 0 0])
+  ("revert-buffer" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("$theme_name" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("protected" .
+   [1 0 0 0 0 0 0 0 0])
+  ("$site_code" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("lang" .
+   [1 0 0 0])
+  ("$white" .
+   [1 0 0 0 0 0])))

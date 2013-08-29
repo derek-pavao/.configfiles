@@ -1,0 +1,49 @@
+[user]
+	name = Derek Pavao
+	email = dpavao@astonish.com
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+
+[core]
+        pager = less -FRSX
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = /Users/dpavao/.gitignore
+
+[alias]
+        co = checkout
+	st = status -s
+	ci = commit
+	w = whatchanged
+	br = branch
+	standup = log --since '1 day ago' --oneline --author dpavao@astonish.com
+[core]
+	editor = nano
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
