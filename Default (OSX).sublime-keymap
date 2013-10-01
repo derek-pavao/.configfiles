@@ -1,5 +1,6 @@
 [
-    { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+tab"], "command": "reindent" },
+  { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
     // { "keys": ["ctrl+x+s"], "command": "save" },
     // { "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false}, "context": [
     //         { "key": "sbp_search_focus_check", "operator": "equal", "operand": true }
@@ -20,6 +21,7 @@
     { "keys": ["alt+b"], "command": "move", "args": {"by": "subwords", "forward": false}},
     { "keys": ["alt+q"], "command": "wrap_lines" },
     { "keys": ["ctrl+o"], "command": "sbp_open_line" },
+
   // Emacs style go to indentation, alt+e can be complicated on Macs
   { "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
   { "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
