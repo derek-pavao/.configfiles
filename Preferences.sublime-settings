@@ -1,0 +1,29 @@
+{
+	"auto_indent": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
+	"find_selected_text": true,
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"jQuery",
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"open_files_in_new_window": false,
+	"phoenix_color_expanded_folder": true,
+	"phoenix_color_green": true,
+	"phoenix_highlight_current_tab": true,
+	"phoenix_sidebar_tree_small": true,
+	"phoenix_solid_current_tab": true,
+	"phoenix_tabs_medium": true,
+	"show_full_path": true,
+	"tab_size": 4,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_wrap": false
+}
