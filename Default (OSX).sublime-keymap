@@ -300,5 +300,13 @@
 
   // Capitalization commands
   { "keys": ["ctrl+x", "ctrl+u"], "command": "upper_case" },
-    { "keys": ["ctrl+x", "ctrl+l"], "command": "lower_case" }
+  { "keys": ["ctrl+x", "ctrl+l"], "command": "lower_case" },
+
+  // Make the command pallete more emacs like
+  { "keys": ["option+x"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+  // advanced new file key binding
+  { "keys": ["ctrl+x", "f"], "command": "advanced_new_file"},
+
+  { "keys": ["ctrl+x","/"], "command": "sbp_toggle_comment" }
 ]
