@@ -3,15 +3,19 @@
 	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
 	"find_selected_text": true,
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"jQuery",
 		"Vintage"
 	],
+	"line_numbers": false,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"margin": 2,
+	"match_tags": false,
+	"my_special_setting": "foo",
 	"open_files_in_new_window": false,
 	"phoenix_color_expanded_folder": true,
 	"phoenix_color_green": true,
