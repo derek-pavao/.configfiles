@@ -7,7 +7,7 @@ alias puppeteerjs="cd /applications/MAMP/htdocs/PuppeteerJS"
 alias krakenStart="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar server kraken-service/dev.yml"
 alias krakenDBMigrate="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar db migrate kraken-service/dev.yml"
 alias mci='mvn clean install'
-alias em='open -a emacs '
+alias em='emacs '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -26,6 +26,9 @@ alias ll='ls -alFG'
 alias la='ls -AG'
 alias l='ls -CFG'
 alias ls='ls -G'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/lib/python2.7/site-packages/django/bin:/usr/local/share/python:$PATH
