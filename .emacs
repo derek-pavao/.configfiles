@@ -31,42 +31,54 @@
 ;;(defalias 'list-buffers 'ibuffer)
 
 ;; Save all tempfiles in $TMPDIR/emacs$UID/
-    (defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
-    (setq backup-directory-alist
-        `((".*" . ,emacs-tmp-dir)))
-    (setq auto-save-file-name-transforms
-        `((".*" ,emacs-tmp-dir t)))
-    (setq auto-save-list-file-prefix
-          emacs-tmp-dir)
+(defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
+(setq backup-directory-alist
+      `((".*" . ,emacs-tmp-dir)))
+(setq auto-save-file-name-transforms
+      `((".*" ,emacs-tmp-dir t)))
+(setq auto-save-list-file-prefix
+      emacs-tmp-dir)
 
-(setq create-lockfiles nil)
+;;(setq create-lockfiles nil)
 
 
 ;; scroll one line at a time (less "jumpy" than defaults)
-;;(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
-(setq mouse-wheel-scroll-amount '(0.01))
-(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
-(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
-;;(setq scroll-step 1) ;; keyboard scroll one line at a time
+;; (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+;; (setq mouse-wheel-scroll-amount '(0.01))
+;; (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+;; (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+;; (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 
 ;; Enable mouse support
-(unless window-system
-  (require 'mouse)
-  (xterm-mouse-mode t)
-  (global-set-key [mouse-4] '(lambda ()
-                               (interactive)
-                               (scroll-down 1)))
-  (global-set-key [mouse-5] '(lambda ()
-                               (interactive)
-                               (scroll-up 1)))
-  (defun track-mouse (e))
-  setq mouse-sel-mode t)
-)
+;; (unless window-system
+;;   (require 'mouse)
+;;   (xterm-mouse-mode t)
+;;   (global-set-key [mouse-4] '(lambda ()
+;;                                (interactive)
+;;                                (scroll-down 1)))
+;;   (global-set-key [mouse-5] '(lambda ()
+;;                                (interactive)
+;;                                (scroll-up 1)))
+;;   (defun track-mouse (e))
+;;   setq mouse-sel-mode t)
+;; )
 
 
 ;; disable showing the scroll bar
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
+
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
+(global-set-key [mouse-4] '(lambda ()
+                             (interactive)
+                             (scroll-down 1)))
+(global-set-key [mouse-5] '(lambda ()
+                             (interactive)
+                             (scroll-up 1)))
+
 
 (load-theme 'deeper-blue t)
 (set-default 'truncate-lines t)
@@ -102,7 +114,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("a4f8d45297894ffdd98738551505a336a7b3096605b467da83fae00f53b13f01" "8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" "af9761c65a81bd14ee3f32bc2ffc966000f57e0c9d31e392bc011504674c07d6" "73abbe794b6467bbf6a9f04867da0befa604a072b38012039e8c1ba730e5f7a5" default)))
  '(inhibit-startup-screen nil)
- '(initial-buffer-choice "/Applications/MAMP/htdocs/kraken-ui")
+ '(initial-buffer-choice "~/Projects/kraken-ui")
  '(mouse-wheel-progressive-speed t)
  '(tool-bar-mode nil))
 (custom-set-faces
