@@ -8,6 +8,10 @@
 (require 'smooth-scroll)
 (require 'package)
 
+;; Interactively do things
+;; adds nice autocomplete in mini buffer for C-c C-f
+(require 'ido)
+(ido-mode t)
 
 (iswitchb-mode 1)
 
