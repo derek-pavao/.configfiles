@@ -1,170 +1,440 @@
-((("mouse-sel-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("setq" .
+((("path" .
    [1 0 0 0])
-  ("track-mouse" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("defun" .
-   [1 0 0 0 0])
-  ("scroll-up" .
-   [1 0 0 0 0 0 0 0 0])
-  ("scroll-down" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("interactive" .
-   [1 0 0 0 0 0 0 0 0 0 1])
-  ("lambda" .
-   [2 0 0 0 0 0])
-  ("xterm-mouse-mode" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("mouse" .
-   [1 0 0 0 0])
-  ("window-system" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("unless" .
+  ("length" .
    [1 0 0 0 0 0])
-  ("$ps_obj" .
-   [2 0 0 0 0 0 0])
-  ("array" .
-   [2 0 0 0 0])
-  ("$cols" .
-   [3 0 0 0 0])
-  ("$row" .
+  ("join" .
    [2 0 0 0])
-  ("as" .
-   [1 0])
-  ("foreach" .
-   [1 0 0 0 0 0 0])
-  ("$file_contents" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("explode" .
-   [2 0 0 0 0 0 0])
-  ("$rows" .
+  ("attrNameLookupTable" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("newKey" .
+   [3 0 0 0 0 0])
+  ("shift" .
    [2 0 0 0 0])
-  ("ABSPATH" .
-   [1 0 0 0 0 0 0])
-  ("file_get_contents" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("site_code" .
-   [2 0 0 0 0 0 0 0 0])
-  ("empty" .
-   [1 0 0 0 0])
-  ("setup_sitecode_arr" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("public" .
-   [1 0 0 0 0 0])
-  ("$this" .
-   [3 0 0 0 0])
-  ("alias" .
-   [1 0 0 0 0])
-  ("indent-for-tab-command" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("indent" .
-   [1 0 0 0 0 0])
-  ("afterMatchedRoute" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("i" .
-   [1])
-  ("else" .
-   [1 0 0 0])
-  ("return" .
-   [1 0 0 0 0 0])
-  ("if" .
-   [2 0])
-  ("show" .
-   [1 0 0 0])
-  ("el" .
-   [1 0])
-  ("find" .
-   [1 0 0 0])
-  ("$el" .
+  ("firstBit" .
+   [3 0 0 0 0 0 0 0])
+  ("split" .
+   [2 0 0 0 0])
+  ("errorMessageKey" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("keyArr" .
+   [5 0 0 0 0 0])
+  ("not" .
+   [1 0 0])
+  ("foo" .
    [2 0 0])
-  ("risksShow" .
-   [1 0 0 0 0 0 0 0 0])
-  ("apply" .
+  ("puts" .
+   [2 0 0 0])
+  ("do" .
+   [1 0])
+  ("that" .
+   [1 0 0 0])
+  ("tabbar" .
+   [1 0 0 0 0 0])
+  ("getRiskJSONForPolicy" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("relatedIdKey" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("relatedType" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("policyItemBGColor" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("$policyItem" .
+   [1 0 0 0 0 0 1 0 1 0 0])
+  ("css" .
+   [3 0 0])
+  ("ffffff" .
+   [1 0 0 0 0 0])
+  ("true" .
+   [2 0 0 0])
+  ("cancelEdit" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("showSaveMessage" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("formFieldsHaveChanged" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("_cleanUpOpenForms" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("false" .
+   [2 0 0 0 0])
+  ("shownForm" .
+   [9 0 0 0 0 0 0 0 0])
+  ("parents" .
+   [2 0 0 0 0 0 0])
+  ("app" .
+   [11 0 0])
+  ("phoneFormat" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("helpers" .
+   [1 0 0 0 0 0 0])
+  ("phoneNumber" .
+   [4 0 0 0 0 0 0 0 0 0 0])
+  ("phoneModel" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("modelJSON" .
+   [3 0 0 0 0 0 0 0 0])
+  ("Handlebars" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("onInitialSync" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("params" .
+   [2 0 0 0 0 0])
+  ("methods" .
+   [2 0 0 0 0 0 0])
+  ("fetch" .
    [1 0 0 0 0])
-  ("prototype" .
+  ("person2" .
+   [1 0 0 0 0 0 0])
+  ("name" .
+   [4 0 0 0])
+  ("models" .
+   [4 0 0 0 0 0])
+  ("person1" .
+   [1 0 0 0 0 0 0])
+  ("onSync" .
+   [0 0 0 0 1 0])
+  ("new" .
+   [2 0 0])
+  ("Model" .
+   [1 0 0 0 0])
+  ("constructor" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("Person" .
+   [19 0 0 0 0 0])
+  ("url" .
+   [1 0 0])
+  ("BaseModel" .
+   [2 0 0 0 0 0 0 0 0])
+  ("App" .
+   [7 0 0])
+  ("setElement" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("arguments" .
+   [2 0 0 0 0 0 0 0 0])
+  ("delegate" .
+   [1 0 0 0 0 1 0 0])
+  ("Events" .
+   [1 0 0 0 0 0])
+  ("Backbone" .
+   [2 0 0 0 0 0 0 0])
+  ("element" .
+   [4 0 0 0 0 0 0])
+  ("from" .
+   [5 0 0 0])
+  ("e" .
+   [2])
+  ("relativeExpirationDate" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("unix" .
+   [1 0 0 0])
+  ("expirationDate" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("moment" .
+   [4 0 0 0 0 0])
+  ("get" .
+   [5 0 0])
+  ("expireDatePrefix" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("toJSON" .
+   [2 0 0 0 0 0])
+  ("model" .
+   [5 0 0 0 0])
+  ("displayJSON" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("extend" .
+   [2 0 0 0 0 0])
+  ("tabbar-mode" .
+   [5 0 0 0 0 0 0 0 0 0 0])
+  ("$white" .
+   [1 0 0 0 0 0])
+  ("lang" .
+   [2 0 0 0])
+  ("$site_code" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("protected" .
+   [1 0 0 0 0 0 0 0 0])
+  ("$theme_name" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("revert-buffer" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("defalias" .
+   [2 0 0 0 0 0 0 0])
+  ("die" .
+   [1 0 0])
+  ("$new_file_contents" .
+   [0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("print_r" .
+   [2 0 0 0 0 0 0])
+  ("0" .
+   [1])
+  ("auto" .
+   [2 0 0 0])
+  ("smooth-scroll" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("require" .
+   [4 0 0 0 0 0 0])
+  ("deeper-blue" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("load-theme" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("loadNpmTasks" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("grunt" .
+   [1 0 0 0 0])
+  ("comment-region" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [5 0 0])
+  ("global-set-key" .
+   [2 0 0 0 0 0 0 0 0 0 3 0 0 1])
+  ("function" .
+   [19 0 0 0 0 0 0 0])
+  ("greeting" .
+   [2 0 0 0 0 0 0 0])
+  ("about" .
+   [4 0 0 0 0])
+  ("log" .
+   [3 0 0])
+  ("console" .
+   [4 0 0 0 0 0 0])
+  ("home" .
+   [1 0 0 0])
+  ("Template" .
+   [4 0 0 0 0 0 0 0])
+  ("render" .
+   [4 0 0 0 0 0])
+  ("Meteor" .
+   [2 0 0 0 0 0])
+  ("testFunc" .
+   [0 0 0 0 1 0 0 0])
+  ("this" .
+   [59 0 0 0])
+  ("debugger" .
+   [30 0 0 0 0 0 0 0])
+  ("print" .
+   [2 0 0 0 0])
+  ("load" .
+   [2 0 0 0])
+  ("uncomment-region" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("comment-or-uncomment-region" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("set-default" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("scroll-preserve-screen-position" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("Puppeteer" .
    [1 0 0 0 0 0 0 0 0])
   ("Module" .
    [1 0 0 0 0 0])
-  ("Puppeteer" .
+  ("prototype" .
+   [2 0 0 0 0 0 0 0 0])
+  ("apply" .
+   [3 0 0 0 0])
+  ("risksShow" .
    [1 0 0 0 0 0 0 0 0])
-  ("set-face-background" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("scroll-preserve-screen-position" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("set-default" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("comment-or-uncomment-region" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("uncomment-region" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("load" .
+  ("$el" .
+   [3 0 0])
+  ("find" .
    [1 0 0 0])
-  ("print" .
-   [1 0 0 0 0])
-  ("debugger" .
-   [3 0 0 0 0 0 0 0])
-  ("this" .
-   [6 0 0 0])
-  ("testFunc" .
-   [0 0 0 0 1 0 0 0])
-  ("Meteor" .
-   [2 0 0 0 0 0])
-  ("render" .
-   [4 0 0 0 0 0])
-  ("Template" .
-   [4 0 0 0 0 0 0 0])
-  ("home" .
+  ("el" .
+   [4 0])
+  ("show" .
    [1 0 0 0])
-  ("console" .
-   [2 0 0 0 0 0 0])
-  ("log" .
-   [2 0 0])
-  ("about" .
-   [4 0 0 0 0])
-  ("greeting" .
-   [2 0 0 0 0 0 0 0])
-  ("function" .
-   [6 0 0 0 0 0 0 0])
-  ("global-set-key" .
-   [2 0 0 0 0 0 0 0 0 0 3 0 0 1])
-  ("kbd" .
-   [5 0 0])
-  ("comment-region" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("grunt" .
+  ("if" .
+   [12 0])
+  ("return" .
+   [10 0 0 0 0 0])
+  ("else" .
+   [5 0 0 0])
+  ("i" .
+   [2])
+  ("afterMatchedRoute" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("indent" .
+   [1 0 0 0 0 0])
+  ("indent-for-tab-command" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("alias" .
+   [2 0 0 0 0])
+  ("$this" .
+   [3 0 0 0 0])
+  ("public" .
+   [1 0 0 0 0 0])
+  ("setup_sitecode_arr" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("empty" .
    [1 0 0 0 0])
-  ("loadNpmTasks" .
-   [0 0 0 0 0 0 0 0 0 1 0 0])
-  ("load-theme" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("deeper-blue" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("require" .
+  ("site_code" .
+   [2 0 0 0 0 0 0 0 0])
+  ("file_get_contents" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ABSPATH" .
+   [1 0 0 0 0 0 0])
+  ("$rows" .
+   [2 0 0 0 0])
+  ("explode" .
    [2 0 0 0 0 0 0])
-  ("smooth-scroll" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("auto" .
+  ("$file_contents" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("foreach" .
+   [1 0 0 0 0 0 0])
+  ("as" .
+   [2 0])
+  ("$row" .
    [2 0 0 0])
-  ("0" .
-   [1])
-  ("print_r" .
+  ("$cols" .
+   [3 0 0 0 0])
+  ("array" .
+   [2 0 0 0 0])
+  ("$ps_obj" .
    [2 0 0 0 0 0 0])
-  ("$new_file_contents" .
-   [0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("die" .
-   [1 0 0])
-  ("defalias" .
-   [2 0 0 0 0 0 0 0])
-  ("revert-buffer" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("$theme_name" .
+  ("unless" .
+   [3 0 0 0 0 0])
+  ("window-system" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse" .
+   [1 0 0 0 0])
+  ("xterm-mouse-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lambda" .
+   [2 0 0 0 0 0])
+  ("interactive" .
+   [1 0 0 0 0 0 0 0 0 0 1])
+  ("scroll-down" .
    [1 0 0 0 0 0 0 0 0 0 0])
-  ("protected" .
+  ("scroll-up" .
    [1 0 0 0 0 0 0 0 0])
-  ("$site_code" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("lang" .
+  ("defun" .
+   [1 0 0 0 0])
+  ("track-mouse" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [2 0 0 0])
+  ("mouse-sel-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("selectedRiskIds" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("getSelectedRiskIds" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("var" .
+   [18 0 2])
+  ("selectedRiskObjects" .
+   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("selectedRiskCollection" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("children" .
+   [1 0 0 0 0 0 0 0])
+  ("riskQuickList" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("getSelectedRiskObjects" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("forEach" .
+   [1 0 0 0 0 0 0])
+  ("riskId" .
+   [2 0 0 0 0 0])
+  ("collection" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("id" .
+   [2 0])
+  ("riskObject" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("typeof" .
+   [7 0 0 0 0 0])
+  ("push" .
    [1 0 0 0])
-  ("$white" .
-   [1 0 0 0 0 0])))
+  ("getSelectedRiskObjectsAsJSON" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("selectedRisksJSON" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("meta" .
+   [4 0 0 0])
+  ("risks" .
+   [3 0 0 0 0])
+  ("quoteJSON" .
+   [1 0 0 0 0 0 0 0 0])
+  ("res" .
+   [2 0 0])
+  ("quote" .
+   [1 0 0 0 0])
+  ("result" .
+   [1 0 0 0 0 0])
+  ("parent" .
+   [2 0 0 0 0 0])
+  ("apt-get" .
+   [5 0 0 0 0 0 0])
+  ("install" .
+   [4 0 0 0 0 0 0])
+  ("config" .
+   [1 0 0 0 0 0])
+  ("vm" .
+   [1 0])
+  ("synced_folder" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("sudo" .
+   [5 0 0 0])
+  ("-y" .
+   [3 0])
+  ("echo" .
+   [1 0 0 0])
+  ("mysql-server" .
+   [0 0 0 0 0 0 0 0 0 0 0 2])
+  ("mysql-server/root_password" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("password" .
+   [0 0 0 0 1 0 0 0])
+  ("root" .
+   [1 0 0 0])
+  ("debconf-set-selections" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("layout" .
+   [1 0 0 0 0 0])
+  ("appContainer" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("TestMultiModeItemView" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("testMultiModeView" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("TestMultiModeView" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("$target" .
+   [1 0 0 0 0 0 0])
+  ("hasClass" .
+   [1 0 0 0 0 0 0 0])
+  ("ido-mode" .
+   [1 0 0 0 0 0 0 0])
+  ("import" .
+   [5 0 0 0 0 0])
+  ("TestMoule" .
+   [2 0 0 0 0 2 0 0 0])
+  ("class" .
+   [1 0 0 0 0])
+  ("def" .
+   [2 0 0])
+  ("__init__" .
+   [1 0 0 0 0 0 0 0])
+  ("self" .
+   [1 0 0 0])
+  ("created" .
+   [1 0 0 0 0 0 0])
+  ("Kiwi" .
+   [2 0 0 0])
+  ("People" .
+   [3 0 0 0 0 0])
+  ("customerInfo" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("relation" .
+   [1 0 0 0 0 0 0 0])
+  ("POCRelationModel" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("riskDetails" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("_setRiskDetailsModel" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("data" .
+   [1 0 0 0])
+  ("set" .
+   [1 0 0])
+  ("AutoRiskDetailsModel" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
