@@ -1,6 +1,17 @@
 ;; window move wtih M-<arrows>
 
 (add-to-list 'load-path "~/.emacs.d/")
+
+;; load the fancy... tern http://ternjs.net/
+(add-to-list 'load-path "../.configfiles/tern/emacs/")
+(autoload 'tern-mode "tern.el" nil t)
+
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
+
+
 ;;(load "php-mode")
 (load "find-file-in-git-repo")
 
@@ -8,10 +19,25 @@
 (require 'smooth-scroll)
 (require 'package)
 
+(kill-buffer "*scratch*")
+
+
+;; autoload js2mode
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ;; Interactively do things
 ;; adds nice autocomplete in mini buffer for C-c C-f
 (require 'ido)
 (ido-mode t)
+
+;; Don't use messages that you don't read
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+
+
+;; Syntax checking on the fly
+(require 'flymake)
 
 (iswitchb-mode 1)
 
@@ -36,6 +62,13 @@
             (setq beg (line-beginning-position) end (line-end-position)))
         (comment-or-uncomment-region beg end)))
 
+;; kill all buffers except the current one
+(defun kill-other-buffers ()
+      "Kill all other buffers."
+      (interactive)
+      (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+
 ;; Set some custom keyboard shortcuts
 (global-set-key (kbd "C-x f") 'find-file-in-git-repo)
 ;; (global-set-key (kbd "C-x /") 'comment-or-uncomment-region)
@@ -45,7 +78,8 @@
 
 ;; define some convenience aliases
 (defalias 'rb 'revert-buffer)
-;;(defalias 'list-buffers 'ibuffer)
+(defalias 'kob 'kill-other-buffers)
+(defalias 'kb 'kill-buffer)
 
 ;; Save all tempfiles in $TMPDIR/emacs$UID/
 (defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
