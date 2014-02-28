@@ -1,3 +1,6 @@
 [submodule "tern"]
 	path = tern
 	url = git@github.com:marijnh/tern.git
+[submodule "multiple-cursors.el"]
+	path = multiple-cursors.el
+	url = git@github.com:magnars/multiple-cursors.el.git
