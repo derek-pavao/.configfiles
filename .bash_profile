@@ -1,13 +1,14 @@
 alias flush_dns_cache='dscacheutil -flushcache'
 alias loginEC2='ssh -i ~/.ssh/WebServer.pem ubuntu@ec2-54-224-0-17.compute-1.amazonaws.com'
-alias www='cd /applications/MAMP/htdocs'
-alias astonish-mvp="cd /applications/MAMP/htdocs/astonish-mvp"
-alias kraken-ui="cd /applications/MAMP/htdocs/kraken-ui"
-alias puppeteerjs="cd /applications/MAMP/htdocs/PuppeteerJS"
+alias puppeteerjs="cd ~/Projects/puppeteer"
 alias krakenStart="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar server kraken-service/dev.yml"
 alias krakenDBMigrate="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar db migrate kraken-service/dev.yml"
 alias mci='mvn clean install'
 alias em='emacs '
+alias netstat_osx="sudo lsof -i -P"
+alias ui-env='sudo ~/.my-scripts/ui-env.sh'
+alias wp-env='sudo ~/.my-scripts/wp-env.sh'
+alias learn-terminal='echo "Did you know that:"; whatis $(ls /usr/bin | gshuf -n 1) | cowsay'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -42,10 +43,13 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
-PS1="$GREEN\h:$NO_COLOUR:\W$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+PS1="$GREEN\$:$NO_COLOUR:\W$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 
+# learn-terminal
 
-#export PATH="/usr/local/heroku/bin:$PATH"
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
