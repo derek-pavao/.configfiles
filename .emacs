@@ -1,6 +1,12 @@
 ;; window move wtih M-<arrows>
 
 (add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/multiple-cursors.el/")
+
+;; add package archives
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages")
+                         ("melpa" . "http://melpa.milkbox.net/packages")))
 
 ;; load the fancy... tern http://ternjs.net/
 (add-to-list 'load-path "../.configfiles/tern/emacs/")
@@ -18,6 +24,13 @@
 (require 'pi-php-mode)
 (require 'smooth-scroll)
 (require 'package)
+(require 'multiple-cursors)
+
+;; key bindings for multiple cursors
+(multiple-cursors-mode t)
+(global-set-key (kbd "C-c .") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c ,") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (kill-buffer "*scratch*")
 
@@ -25,6 +38,8 @@
 ;; autoload js2mode
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 
 ;; Interactively do things
 ;; adds nice autocomplete in mini buffer for C-c C-f
@@ -44,8 +59,11 @@
 (setq completions-format 'vertical)
 
 (add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/"))
+
 (package-initialize)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
