@@ -4,3 +4,6 @@
 [submodule "multiple-cursors.el"]
 	path = multiple-cursors.el
 	url = git@github.com:magnars/multiple-cursors.el.git
+[submodule "angularjs-mode"]
+	path = angularjs-mode
+	url = https://github.com/omouse/angularjs-mode.git
