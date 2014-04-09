@@ -7,3 +7,6 @@
 [submodule "angularjs-mode"]
 	path = angularjs-mode
 	url = https://github.com/omouse/angularjs-mode.git
+[submodule ".emacs.d/nginx-mode"]
+	path = .emacs.d/nginx-mode
+	url = https://github.com/ajc/nginx-mode.git
