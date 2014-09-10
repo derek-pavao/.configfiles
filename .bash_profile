@@ -53,3 +53,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

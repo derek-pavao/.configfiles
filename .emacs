@@ -2,23 +2,48 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/multiple-cursors.el/")
-
-;; add package archives
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages")
-                         ("melpa" . "http://melpa.milkbox.net/packages")))
+(add-to-list 'load-path "~/.emacs.d/nginx-mode/")
+(add-to-list 'load-path "~/.emacs.d/coffee-mode/")
 
 ;; load the fancy... tern http://ternjs.net/
-(add-to-list 'load-path "../.configfiles/tern/emacs/")
+(add-to-list 'load-path "/Users/dpavao/.configfiles/tern/emacs/")
+
 (autoload 'tern-mode "tern.el" nil t)
+(autoload 'angular-mode "angular-mode.el" nil t)
+
+(load "editorconfig")
+
+;; (show-paren-mode 1)
+;; (setq show-paren-delay 0)
 
 (eval-after-load 'tern
    '(progn
       (require 'tern-auto-complete)
       (tern-ac-setup)))
 
+(add-hook 'js2-post-parse-callbacks (lambda () (tern-mode t)))
+
+;; add package archives
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages")
+                         ("melpa" . "http://melpa.milkbox.net/packages")))
+
+
+
+
+
+;; add nginx mode for config files
+(require 'nginx-mode)
+(add-to-list 'auto-mode-alist '("/usr/local/etc/nginx/.*" . nginx-mode))
+
+
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+(custom-set-variables '(coffee-tab-width 2))
 
 ;;(load "php-mode")
+
 (load "find-file-in-git-repo")
 
 (require 'pi-php-mode)
@@ -99,6 +124,11 @@
 (defalias 'kob 'kill-other-buffers)
 (defalias 'kb 'kill-buffer)
 
+;; Save backups to a different directory so they're
+;; not in the current directory. Git doesn't like that
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq backup-by-copying t)
+
 ;; Save all tempfiles in $TMPDIR/emacs$UID/
 (defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
 (setq backup-directory-alist
@@ -150,6 +180,10 @@
 (ac-config-default)
 
 
+;; js2 config
+(setq-default js2-global-externs '("module" "require" "jasmine" "it" "beforeEach" "expect" "spyOn" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "angular" "_" "$" "jQuery"))
+(require 'js2-refactor)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -158,6 +192,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("a4f8d45297894ffdd98738551505a336a7b3096605b467da83fae00f53b13f01" "8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" "af9761c65a81bd14ee3f32bc2ffc966000f57e0c9d31e392bc011504674c07d6" "73abbe794b6467bbf6a9f04867da0befa604a072b38012039e8c1ba730e5f7a5" default)))
  '(inhibit-startup-screen nil)
+ '(js2-basic-offset 4)
  '(mouse-wheel-progressive-speed t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

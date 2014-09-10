@@ -37,13 +37,25 @@
 	ci = commit
 	w = whatchanged
 	br = branch
+	l = log --decorate --pretty=oneline --abbrev-commit
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lols = log --graph --decorate --pretty=oneline --abbrev-commit --max-count=10
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	standup = log --since '1 day ago' --oneline --author dpavao@astonish.com
-[core]
-	editor = nano
+        ph = !git push && python -m pushroulette
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[core]
+	editor = emacs
+[merge]
+        keepBackup = false
+        tool = p4merge
+[mergetool "p4merge"]
+        keepTemporaries = false
+        trustExitCode = false
+        keepBackup = false
+        cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
+
+[pull]
+	rebase = true
+[push]
+	default = simple
