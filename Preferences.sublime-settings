@@ -3,7 +3,6 @@
     "auto_indent": true,
     "bold_folder_labels": true,
     "caret_style": "phase",
-    "color_scheme": "Packages/Color Scheme - Default/Dawn.tmTheme",
     "detect_indentation": false,
     "find_selected_text": true,
     "folder_exclude_patterns":
@@ -23,17 +22,16 @@
         "dist",
         "node_modules",
         ".sass-cache",
-        "bower_components",
-        "libs"
+        "bower_components"
     ],
     "font_size": 12,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignored_packages":
     [
-        "BracketHighlighter",
+        "GitGutter",
         "Vintage",
-        "GitGutter"
+        "BracketHighlighter"
     ],
     "line_numbers": false,
     "line_padding_bottom": 1,
@@ -48,6 +46,7 @@
     "phoenix_sidebar_tree_small": true,
     "phoenix_solid_current_tab": true,
     "phoenix_tabs_medium": true,
+    "shift_tab_unindent": true,
     "show_full_path": true,
     "smart_indent": true,
     "tab_size": 4,
