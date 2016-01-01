@@ -1,14 +1,8 @@
 alias flush_dns_cache='dscacheutil -flushcache'
-alias loginEC2='ssh -i ~/.ssh/WebServer.pem ubuntu@ec2-54-224-0-17.compute-1.amazonaws.com'
-alias puppeteerjs="cd ~/Projects/puppeteer"
-alias krakenStart="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar server kraken-service/dev.yml"
-alias krakenDBMigrate="java -jar kraken-service/target/kraken-service-0.0.1-SNAPSHOT.jar db migrate kraken-service/dev.yml"
-alias mci='mvn clean install'
-alias em='emacs '
 alias netstat_osx="sudo lsof -i -P"
-alias ui-env='sudo ~/.my-scripts/ui-env.sh'
-alias wp-env='sudo ~/.my-scripts/wp-env.sh'
-alias learn-terminal='echo "Did you know that:"; whatis $(ls /usr/bin | gshuf -n 1) | cowsay'
+alias java-repl="java -jar ~/.my-utils/javarepl.jar"
+alias mci="mvn clean install"
+alias start-static-server="python -m SimpleHTTPServer 8000"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -32,7 +26,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/lib/python2.7/site-packages/django/bin:/usr/local/share/python:$PATH
+export PATH=/Users/dpavao/.android-sdk/sdk/tools:/Users/dpavao/.android-sdk/sdk/platform-tools:/Users/dpavao/.node/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH
 
 function parse_git_branch () {
        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -46,6 +40,9 @@ NO_COLOUR="\[\033[0m\]"
 PS1="$GREEN\$:$NO_COLOUR:\W$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/Users/dpavao/.android-sdk/sdk
+export SAUCE_USERNAME=derek-pavao-nsl
+# export SAUCE_ACCESS_KEY=KEY_HERE
 
 
 # learn-terminal
@@ -54,5 +51,17 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+###-tns-completion-start-###
+if [ -f /Users/dpavao/.tnsrc ]; then
+    source /Users/dpavao/.tnsrc
+fi
+###-tns-completion-end-###
+
+###-tns-completion-start-###
+if [ -f /Users/dpavao/.tnsrc ]; then
+    source /Users/dpavao/.tnsrc
+fi
+###-tns-completion-end-###
+
+export NVM_DIR="/Users/dpavao/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
