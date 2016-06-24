@@ -10,3 +10,6 @@
 [submodule ".emacs.d/nginx-mode"]
 	path = .emacs.d/nginx-mode
 	url = https://github.com/ajc/nginx-mode.git
+[submodule "tern"]
+	path = tern
+	url = git@github.com:ternjs/tern.git
