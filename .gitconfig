@@ -1,6 +1,6 @@
 [user]
 	name = Derek Pavao
-	email = derek.pavao@nextsteplivinginc.com
+	email = dpavao@intersections.com
 
 [color]
         diff = auto
@@ -34,6 +34,7 @@
 [alias]
         co = checkout
 	st = status -s
+        sdiff = "!diff() { cdiff -s -w 120 $1 $2; }; diff"
 	ci = commit
 	w = whatchanged
 	br = branch
@@ -41,21 +42,23 @@
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lols = log --graph --decorate --pretty=oneline --abbrev-commit --max-count=10
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	standup = log --since '1 day ago' --oneline --author dpavao@astonish.com
+	standup = log --since '1 day ago' --oneline --author dpavao@intersections.com --all
         ph = !git push && python -m pushroulette
 
 [core]
 	editor = emacs
 [merge]
         keepBackup = false
-        tool = p4merge
-[mergetool "p4merge"]
-        keepTemporaries = false
-        trustExitCode = false
-        keepBackup = false
-        cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
-
-[pull]
-	rebase = true
+	tool = bc4
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
+[commit]
+        template = /Users/dpavao/.stCommitMsg
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[pull]
+	rebase = true
